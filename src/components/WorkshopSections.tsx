@@ -7,13 +7,13 @@ const WorkshopSections = () => {
   const sessions = [
     {
       number: "01",
-      title: "Define the challenge",
-      description: "Introductions, gather pain points and requirements"
+      title: "AI Usecases in design and research",
+      description: "Understand AI usecases in design, research, a11y and UX writing"
     },
     {
       number: "02", 
-      title: "AI Usecases in design and research",
-      description: "Understand AI usecases in design, research, a11y and UX writing"
+      title: "Define the challenge",
+      description: "Introductions, gather pain points and requirements"
     },
     {
       number: "03",
