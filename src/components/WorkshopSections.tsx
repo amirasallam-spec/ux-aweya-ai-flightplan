@@ -12,7 +12,7 @@ const WorkshopSections = () => {
     },
     {
       number: "02", 
-      title: "Define, analyze and redesign using AI",
+      title: "AI Usecases in design and research",
       description: "Analyze an existing product; structure findings"
     },
     {
