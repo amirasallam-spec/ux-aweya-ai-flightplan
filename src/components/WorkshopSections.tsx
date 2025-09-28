@@ -132,7 +132,7 @@ const WorkshopSections = () => {
                   <Calendar className="w-6 h-6 text-primary" />
                   <div>
                     <h4 className="font-semibold">Dates</h4>
-                    <p className="text-muted-foreground">Fridays @ 4:00 PM, Sep 26 - Oct 31, 2025</p>
+                    <p className="text-muted-foreground">Fridays @ 4:00 PM, Oct 7 - Nov 11, 2025</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -263,7 +263,7 @@ const WorkshopSections = () => {
             <CardContent className="p-12 text-white">
               <h2 className="text-3xl font-bold mb-4">Ready to level up?</h2>
               <p className="text-lg mb-6 text-white/90">
-                Secure your seat for the only UXaweya workshop in 2025. Starts Friday, Sep 26. 9950 LE.
+                Secure your seat for the only UXaweya workshop in 2025. Starts Friday, Oct 7. 9950 LE.
               </p>
               <Button 
                 size="lg" 
