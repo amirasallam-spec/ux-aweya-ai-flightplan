@@ -228,7 +228,7 @@ const WorkshopSections = () => {
             <CardContent className="p-12 text-white">
               <h2 className="text-3xl font-bold mb-4">Ready to level up?</h2>
               <p className="text-lg mb-6 text-white/90">Secure your seat for the last UXaweya workshop in 2025. Starts Friday, Oct 7. 9950 LE.</p>
-              <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 animate-pulse-soft" onClick={() => window.open('https://forms.gle/ceFBxieDRKuU3Y8B8', '_blank')}>
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 animate-pulse-soft" onClick={() => window.open('https://forms.gle/j7izo5Doi75L6kne9', '_blank')}>
                 Fill the form to enroll
               </Button>
             </CardContent>
