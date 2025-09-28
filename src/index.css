@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Professional workshop design system - UXaweya theme
+All colors MUST be HSL for consistency.
+*/
+
+@layer base {
+  :root {
+    --background: 255 255% 99%;
+    --foreground: 222 84% 4.9%;
+
+    --card: 255 255% 100%;
+    --card-foreground: 222 84% 4.9%;
+
+    --popover: 255 255% 100%;
+    --popover-foreground: 222 84% 4.9%;
+
+    /* Professional blue theme */
+    --primary: 214 88% 52%;
+    --primary-foreground: 255 255% 100%;
+    --primary-light: 214 88% 65%;
+    --primary-dark: 214 88% 42%;
+
+    /* Professional secondary colors */
+    --secondary: 240 11% 96%;
+    --secondary-foreground: 240 6% 10%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 214 88% 52%;
+    --accent-foreground: 255 255% 100%;
+
+    /* Workshop theme colors - Blue gradients */
+    --workshop-gradient: linear-gradient(135deg, hsl(214 88% 52%), hsl(200 88% 58%));
+    --hero-gradient: linear-gradient(135deg, hsl(214 88% 52%) 0%, hsl(200 88% 58%) 50%, hsl(187 88% 62%) 100%);
+    --card-gradient: linear-gradient(145deg, hsl(255 255% 100%) 0%, hsl(214 20% 98%) 100%);
+    
+    /* Professional shadows - Blue tinted */
+    --shadow-sm: 0 2px 4px -1px hsl(214 88% 52% / 0.1);
+    --shadow-md: 0 4px 16px -4px hsl(214 88% 52% / 0.15);
+    --shadow-lg: 0 10px 32px -8px hsl(214 88% 52% / 0.2);
+    --shadow-glow: 0 0 32px hsl(214 88% 52% / 0.3);
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 255 255% 100%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 214 88% 52%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 84% 4.9%;
+    --foreground: 255 255% 98%;
+
+    --card: 222 84% 4.9%;
+    --card-foreground: 255 255% 98%;
+
+    --popover: 222 84% 4.9%;
+    --popover-foreground: 255 255% 98%;
+
+    --primary: 214 88% 65%;
+    --primary-foreground: 222 84% 4.9%;
+    --primary-light: 214 88% 75%;
+    --primary-dark: 214 88% 52%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 255 255% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 214 88% 65%;
+    --accent-foreground: 222 84% 4.9%;
+
+    --workshop-gradient: linear-gradient(135deg, hsl(214 88% 65%), hsl(200 88% 68%));
+    --hero-gradient: linear-gradient(135deg, hsl(214 88% 65%) 0%, hsl(200 88% 68%) 50%, hsl(187 88% 72%) 100%);
+    --card-gradient: linear-gradient(145deg, hsl(222 84% 4.9%) 0%, hsl(240 20% 8%) 100%);
+    
+    --shadow-sm: 0 2px 4px -1px hsl(0 0% 0% / 0.3);
+    --shadow-md: 0 4px 16px -4px hsl(0 0% 0% / 0.4);
+    --shadow-lg: 0 10px 32px -8px hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 32px hsl(214 88% 65% / 0.4);
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 255 255% 98%;
+
+    --border: 217 33% 17%;
+    --input: 217 33% 17%;
+    --ring: 214 88% 65%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  /* Custom workshop styles */
+  .gradient-text {
+    background: var(--workshop-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: var(--hero-gradient);
+  }
+
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  /* Smooth animations */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out;
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-pulse-soft {
+    animation: pulseSoft 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseSoft {
+    0%, 100% {
+      box-shadow: var(--shadow-md);
+    }
+    50% {
+      box-shadow: var(--shadow-glow);
+    }
+  }
+}
