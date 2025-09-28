@@ -146,7 +146,7 @@ const WorkshopSections = () => {
                   <div className="w-6 h-6 text-primary font-bold text-xl">LE</div>
                   <div>
                     <h4 className="font-semibold">Price</h4>
-                    <p className="text-2xl font-bold text-primary">7000 LE</p>
+                    <p className="text-2xl font-bold text-primary">9950 LE</p>
                   </div>
                 </div>
                 <Badge variant="outline" className="w-fit border-primary/20 text-primary">
@@ -263,7 +263,7 @@ const WorkshopSections = () => {
             <CardContent className="p-12 text-white">
               <h2 className="text-3xl font-bold mb-4">Ready to level up?</h2>
               <p className="text-lg mb-6 text-white/90">
-                Secure your seat for the only UXaweya workshop in 2025. Starts Friday, Sep 26. 7000 LE.
+                Secure your seat for the only UXaweya workshop in 2025. Starts Friday, Sep 26. 9950 LE.
               </p>
               <Button 
                 size="lg" 
