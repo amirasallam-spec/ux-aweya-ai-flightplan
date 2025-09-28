@@ -169,7 +169,7 @@ const WorkshopSections = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  Problem framing → Heuristic analysis → AI prototyping → Storytelling → Iteration
+                  AI usecases in design and research → AI UX design patterns → AI prototyping → Storytelling → Iteration
                 </p>
               </CardContent>
             </Card>
