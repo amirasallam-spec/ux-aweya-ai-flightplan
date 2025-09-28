@@ -12,13 +12,9 @@ const WorkshopHero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
         {/* Logo */}
-        <div className="mb-6">
-          <img src="/lovable-uploads/4754f949-e8fa-435b-89cc-7486ea6c12a1.png" alt="UXaweya Logo" className="w-20 h-20 mx-auto mb-4 rounded-full shadow-lg" />
-        </div>
         
-        <Badge variant="secondary" className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20">
-          The Only UXaweya Workshop in 2025
-        </Badge>
+        
+        <Badge variant="secondary" className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20"></Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
           UXaweya Advanced Workshop
