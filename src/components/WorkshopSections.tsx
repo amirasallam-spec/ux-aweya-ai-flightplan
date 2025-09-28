@@ -2,64 +2,36 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Users, Calendar, Target, BookOpen, Presentation } from "lucide-react";
-
 const WorkshopSections = () => {
-  const sessions = [
-    {
-      number: "01",
-      title: "AI Usecases in design and research",
-      description: "Understand AI usecases in design, research, a11y and UX writing"
-    },
-    {
-      number: "02", 
-      title: "Define the challenge",
-      description: "Introductions, gather pain points and requirements"
-    },
-    {
-      number: "03",
-      title: "AI workflow integrated design", 
-      description: "Integrate AI into the redesigned app and understanding its limitations"
-    },
-    {
-      number: "04",
-      title: "AI prototyping",
-      description: "Test prompts, build flows, validate rapidly"
-    },
-    {
-      number: "05",
-      title: "Storytelling and presentation",
-      description: "Narrative, visuals, delivery"
-    },
-    {
-      number: "06",
-      title: "Feedback to final",
-      description: "Present, iterate, and refine after critique"
-    }
-  ];
-
-  const skills = [
-    "AI usecases in design and research",
-    "Analytical framing and requirements gathering",
-    "AI integrated workflow design experience", 
-    "Prompt design and rapid prototyping with AI tools",
-    "Storytelling, visual communication, and presentation",
-    "Feedback handling and iteration"
-  ];
-
-  const deliverables = [
-    "Redesigned application using AI",
-    "Clickable AI-augmented prototype", 
-    "Stakeholder-ready presentation deck"
-  ];
-
-  const whyJoin = [
-    "Learn something new every session",
-    "Produce portfolio-ready artifacts",
-    "Practical, team-ready workflow you can apply immediately"
-  ];
-
-  return (
-    <div className="py-20 px-6">
+  const sessions = [{
+    number: "01",
+    title: "AI Usecases in design and research",
+    description: "Understand AI usecases in design, research, a11y and UX writing"
+  }, {
+    number: "02",
+    title: "Define the challenge",
+    description: "Introductions, gather pain points and requirements"
+  }, {
+    number: "03",
+    title: "AI workflow integrated design",
+    description: "Integrate AI into the redesigned app and understanding its limitations"
+  }, {
+    number: "04",
+    title: "AI prototyping",
+    description: "Test prompts, build flows, validate rapidly"
+  }, {
+    number: "05",
+    title: "Storytelling and presentation",
+    description: "Narrative, visuals, delivery"
+  }, {
+    number: "06",
+    title: "Feedback to final",
+    description: "Present, iterate, and refine after critique"
+  }];
+  const skills = ["AI usecases in design and research", "Analytical framing and requirements gathering", "AI integrated workflow design experience", "Prompt design and rapid prototyping with AI tools", "Storytelling, visual communication, and presentation", "Feedback handling and iteration"];
+  const deliverables = ["Redesigned application using AI", "Clickable AI-augmented prototype", "Stakeholder-ready presentation deck"];
+  const whyJoin = ["Learn something new every session", "Produce portfolio-ready artifacts", "Practical, team-ready workflow you can apply immediately"];
+  return <div className="py-20 px-6">
       <div className="max-w-6xl mx-auto space-y-20">
         
         {/* What it is */}
@@ -180,12 +152,10 @@ const WorkshopSections = () => {
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2">
-                  {deliverables.map((item, index) => (
-                    <li key={index} className="flex items-start gap-2">
+                  {deliverables.map((item, index) => <li key={index} className="flex items-start gap-2">
                       <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                       <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
+                    </li>)}
                 </ul>
               </CardContent>
             </Card>
@@ -203,8 +173,7 @@ const WorkshopSections = () => {
             <h2 className="text-4xl font-bold mb-6 gradient-text">Session outline</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {sessions.map((session, index) => (
-              <Card key={index} className="card-gradient shadow-workshop border-primary/10 hover:shadow-glow transition-all duration-300">
+            {sessions.map((session, index) => <Card key={index} className="card-gradient shadow-workshop border-primary/10 hover:shadow-glow transition-all duration-300">
                 <CardHeader>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
@@ -216,8 +185,7 @@ const WorkshopSections = () => {
                 <CardContent>
                   <p className="text-muted-foreground">{session.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </section>
 
@@ -229,12 +197,10 @@ const WorkshopSections = () => {
           <Card className="card-gradient shadow-workshop border-primary/10 max-w-4xl mx-auto">
             <CardContent className="p-8">
               <ul className="grid md:grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <li key={index} className="flex items-start gap-3">
+                {skills.map((skill, index) => <li key={index} className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                     <span className="text-muted-foreground">{skill}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </CardContent>
           </Card>
@@ -246,14 +212,12 @@ const WorkshopSections = () => {
             <h2 className="text-4xl font-bold mb-6 gradient-text">Why join</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-6">
-            {whyJoin.map((reason, index) => (
-              <Card key={index} className="card-gradient shadow-workshop border-primary/10 text-center">
+            {whyJoin.map((reason, index) => <Card key={index} className="card-gradient shadow-workshop border-primary/10 text-center">
                 <CardContent className="p-6">
                   <Presentation className="w-8 h-8 text-primary mx-auto mb-4" />
                   <p className="text-muted-foreground">{reason}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </section>
 
@@ -263,14 +227,8 @@ const WorkshopSections = () => {
           <Card className="hero-gradient shadow-glow border-0 max-w-2xl mx-auto">
             <CardContent className="p-12 text-white">
               <h2 className="text-3xl font-bold mb-4">Ready to level up?</h2>
-              <p className="text-lg mb-6 text-white/90">
-                Secure your seat for the only UXaweya workshop in 2025. Starts Friday, Oct 7. 9950 LE.
-              </p>
-              <Button 
-                size="lg" 
-                className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 animate-pulse-soft"
-                onClick={() => window.open('https://forms.gle/ceFBxieDRKuU3Y8B8', '_blank')}
-              >
+              <p className="text-lg mb-6 text-white/90">Secure your seat for the last UXaweya workshop in 2025. Starts Friday, Oct 7. 9950 LE.</p>
+              <Button size="lg" className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 animate-pulse-soft" onClick={() => window.open('https://forms.gle/ceFBxieDRKuU3Y8B8', '_blank')}>
                 Fill the form to enroll
               </Button>
             </CardContent>
@@ -278,8 +236,6 @@ const WorkshopSections = () => {
         </section>
 
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default WorkshopSections;
