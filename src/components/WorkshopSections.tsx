@@ -38,6 +38,7 @@ const WorkshopSections = () => {
   ];
 
   const skills = [
+    "AI usecases in design and research",
     "Analytical framing and requirements gathering",
     "AI integrated workflow design experience", 
     "Prompt design and rapid prototyping with AI tools",
