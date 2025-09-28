@@ -12,7 +12,7 @@ const WorkshopSections = () => {
     },
     {
       number: "02", 
-      title: "Redesign app",
+      title: "Problem definition and redesign an app",
       description: "Analyze an existing product; structure findings"
     },
     {
