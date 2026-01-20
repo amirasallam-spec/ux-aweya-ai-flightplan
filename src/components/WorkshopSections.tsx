@@ -1,7 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight } from "lucide-react";
+import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from "lucide-react";
 
 const WorkshopSections = () => {
   const sessions = [
@@ -56,6 +56,27 @@ const WorkshopSections = () => {
     "Learn something new every session",
     "Produce portfolio-ready artifacts",
     "Practical, team-ready workflow you can apply immediately"
+  ];
+
+  const testimonials = [
+    {
+      name: "Sarah M.",
+      role: "Product Designer",
+      quote: "This workshop completely transformed how I approach AI in my design workflow. The hands-on sessions were incredibly valuable.",
+      avatar: "SM"
+    },
+    {
+      name: "Ahmed K.",
+      role: "UX Lead",
+      quote: "Finally, a practical workshop that goes beyond theory. I left with real skills and portfolio pieces I'm proud of.",
+      avatar: "AK"
+    },
+    {
+      name: "Nour H.",
+      role: "Freelance Designer",
+      quote: "The best investment I've made in my career this year. The instructor's expertise and teaching style made complex concepts accessible.",
+      avatar: "NH"
+    }
   ];
 
   return (
@@ -270,6 +291,39 @@ const WorkshopSections = () => {
               </p>
             </CardContent>
           </Card>
+        </section>
+
+        {/* Testimonials */}
+        <section className="animate-fade-up">
+          <div className="flex items-center gap-3 mb-6">
+            <div className="w-8 h-0.5 bg-primary" />
+            <span className="text-primary font-medium tracking-wide uppercase text-sm">
+              Testimonials
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What past attendees say</h2>
+          <div className="grid md:grid-cols-3 gap-6 w-full">
+            {testimonials.map((testimonial, index) => (
+              <Card 
+                key={index} 
+                className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border"
+              >
+                <CardContent className="p-6">
+                  <Quote className="w-8 h-8 text-primary/40 mb-4" />
+                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
+                      {testimonial.avatar}
+                    </div>
+                    <div>
+                      <p className="font-semibold text-foreground">{testimonial.name}</p>
+                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </section>
 
         {/* Final CTA */}
