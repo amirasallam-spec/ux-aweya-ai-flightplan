@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import instructorImage from "@/assets/instructor-cutout.png";
 
 const WorkshopHero = () => {
   return (
@@ -34,7 +35,8 @@ const WorkshopHero = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 w-full">
-        <div className="max-w-2xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div className="max-w-2xl">
           {/* Tagline */}
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-0.5 bg-primary" />
@@ -80,6 +82,16 @@ const WorkshopHero = () => {
             Secure Your Seat Now
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
+          </div>
+          
+          {/* Instructor Image */}
+          <div className="hidden lg:flex justify-center items-end">
+            <img 
+              src={instructorImage} 
+              alt="Workshop instructor" 
+              className="max-h-[600px] w-auto object-contain drop-shadow-2xl"
+            />
+          </div>
         </div>
       </div>
       
