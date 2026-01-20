@@ -16,30 +16,28 @@ const WorkshopHero = () => {
         
         <Badge variant="secondary" className="mb-6 bg-white/10 text-white border-white/20 hover:bg-white/20"></Badge>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">UX for AI Workshop </h1>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">Vibe Coding Workshop</h1>
         
         <p className="text-xl md:text-2xl mb-4 text-white/90 font-light">
           From Analysis to AI-Powered Prototyping
         </p>
         
-        <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">
-          A 6-session, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
-        </p>
+        <p className="text-lg mb-8 text-white/80 max-w-2xl mx-auto">A 6-session, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.</p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <div className="text-center">
             <p className="text-sm text-white/70">Starting</p>
-            <p className="text-xl font-semibold">Oct 7, 2025</p>
+            <p className="text-xl font-semibold">Friday, Jan 30</p>
           </div>
           <div className="hidden sm:block w-px h-12 bg-white/30"></div>
           <div className="text-center">
             <p className="text-sm text-white/70">Price</p>
-            <p className="text-xl font-semibold">9950 LE</p>
+            <p className="text-xl font-semibold">8500 LE</p>
           </div>
           <div className="hidden sm:block w-px h-12 bg-white/30"></div>
           <div className="text-center">
-            <p className="text-sm text-white/70">Duration</p>
-            <p className="text-xl font-semibold">6 sessions + 1 bonus session</p>
+            <p className="text-sm text-white/70">Number of sessions</p>
+            <p className="text-xl font-semibold">6 sessions + 1 soft skill bonus session</p>
           </div>
         </div>
         
