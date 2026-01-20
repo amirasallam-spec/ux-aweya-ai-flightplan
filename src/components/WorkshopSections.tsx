@@ -194,6 +194,28 @@ const WorkshopSections = () => {
           </div>
         </section>
 
+        {/* About the instructor */}
+        <section className="animate-fade-up">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-6 gradient-text">About the instructor</h2>
+          </div>
+          <Card className="card-gradient shadow-workshop border-primary/10 max-w-4xl mx-auto">
+            <CardContent className="p-8">
+              <div className="aspect-video bg-muted rounded-lg flex items-center justify-center mb-6 border border-primary/10">
+                <div className="text-center">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
+                    <Presentation className="w-8 h-8 text-primary" />
+                  </div>
+                  <p className="text-muted-foreground">Video coming soon</p>
+                </div>
+              </div>
+              <p className="text-muted-foreground text-center">
+                Instructor bio and details will be added here. Learn more about the experience and expertise behind this workshop.
+              </p>
+            </CardContent>
+          </Card>
+        </section>
+
 
         {/* Final CTA */}
         <section className="text-center animate-fade-up">
