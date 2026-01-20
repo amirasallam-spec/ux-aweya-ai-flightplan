@@ -46,11 +46,11 @@ const WorkshopSections = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="text-left">
                     <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
-                    <p className="text-muted-foreground">Mid–Senior designers; ambitious juniors welcome if they feel "course-rich, progress-poor."</p>
+                    <p className="text-muted-foreground">All levels. Designers, developers, freelancers, PMs. </p>
                   </div>
                   <div className="text-left">
-                    <h4 className="font-semibold mb-2 text-primary">Exclusivity:</h4>
-                    <p className="text-muted-foreground">The only UXaweya workshop in 2025.</p>
+                    
+                    
                   </div>
                 </div>
               </CardContent>
@@ -61,36 +61,9 @@ const WorkshopSections = () => {
         {/* Who it's for */}
         <section className="animate-fade-up">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6 gradient-text">Who it's for</h2>
+            
           </div>
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="card-gradient shadow-workshop border-primary/10">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Users className="w-6 h-6 text-primary" />
-                  Mid–Senior Designers
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Product/UX/UI Designers who want stronger analysis, storytelling, and AI skills.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="card-gradient shadow-workshop border-primary/10">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-3">
-                  <Target className="w-6 h-6 text-primary" />
-                  Ambitious Juniors
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">
-                  Seeking a real workflow, not another course.
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          
         </section>
 
         {/* Schedule and Price */}
