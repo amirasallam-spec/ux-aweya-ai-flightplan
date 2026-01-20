@@ -78,6 +78,7 @@ const WorkshopHero = () => {
           <Button 
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+            onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
           >
             Secure Your Seat Now
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

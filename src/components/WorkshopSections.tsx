@@ -289,7 +289,7 @@ const WorkshopSections = () => {
               <Button 
                 size="lg" 
                 className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-                onClick={() => window.open('https://forms.gle/j7izo5Doi75L6kne9', '_blank')}
+                onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
               >
                 Fill the form to enroll
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
