@@ -130,7 +130,7 @@ const WorkshopSections = () => {
                   <div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
                     <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
-                    <p className="text-muted-foreground">Sessions over 1.5 months</p>
+                    <p className="text-muted-foreground">Online - Microsoft Teams</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
