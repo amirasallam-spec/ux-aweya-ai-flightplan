@@ -168,6 +168,8 @@ const WorkshopSections = () => {
                   <li>1. Speed up your design process</li>
                   <li>2. Build prototypes faster</li>
                   <li>3. Automate repetitive tasks</li>
+                  <li>4. Understand advantages and limitations of tools</li>
+                  <li>5. Abiding by the design system for consistent stakeholder presentation</li>
                 </ul>
               </CardContent>
             </Card>
