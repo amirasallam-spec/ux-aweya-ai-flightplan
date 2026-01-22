@@ -37,14 +37,6 @@ const WorkshopSections = () => {
     }
   ];
 
-  const skills = [
-    "AI usecases in design and research",
-    "Analytical framing and requirements gathering",
-    "AI integrated workflow design experience",
-    "Prompt design and rapid prototyping with AI tools",
-    "Storytelling, visual communication, and presentation",
-    "Feedback handling and iteration"
-  ];
 
   const deliverables = [
     "Redesign application using AI-Prototyping",
