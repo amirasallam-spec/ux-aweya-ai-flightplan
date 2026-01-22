@@ -185,9 +185,6 @@ const WorkshopSections = () => {
               </CardContent>
             </Card>
           </div>
-          <p className="mt-6 text-muted-foreground">
-            <strong className="text-foreground">Tools:</strong> Lovable, V0, Figma/Make, or your preferred "vibe coding" tool
-          </p>
         </section>
 
         {/* Session outline */}
