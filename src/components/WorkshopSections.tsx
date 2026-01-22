@@ -278,13 +278,14 @@ const WorkshopSections = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">About the instructor</h2>
           <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
             <CardContent className="p-8">
-              <div className="aspect-video bg-muted rounded-xl flex items-center justify-center mb-6 border border-border">
-                <div className="text-center">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-3">
-                    <Presentation className="w-8 h-8 text-primary" />
-                  </div>
-                  <p className="text-muted-foreground">Video coming soon</p>
-                </div>
+              <div className="aspect-[9/16] max-w-[300px] rounded-xl overflow-hidden mb-6 border border-border">
+                <iframe
+                  src="https://www.youtube.com/embed/wT7zRGignjQ"
+                  title="About the instructor"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
               <p className="text-muted-foreground">
                 Instructor bio and details will be added here. Learn more about the experience and expertise behind this workshop.
