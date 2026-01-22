@@ -222,28 +222,6 @@ const WorkshopSections = () => {
           </div>
         </section>
 
-        {/* Skills you'll gain */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Growth
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Skills you'll gain</h2>
-          <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
-            <CardContent className="p-8">
-              <ul className="grid md:grid-cols-2 gap-4">
-                {skills.map((skill, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span className="text-muted-foreground">{skill}</span>
-                  </li>
-                ))}
-              </ul>
-            </CardContent>
-          </Card>
-        </section>
 
         {/* Why join */}
         <section className="animate-fade-up">
