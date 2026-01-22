@@ -164,9 +164,11 @@ const WorkshopSections = () => {
                 <CardTitle className="text-xl text-foreground">Vibe coding tools and process</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">
-                  1. Speed up your design process
-                </p>
+                <ul className="text-muted-foreground space-y-2">
+                  <li>1. Speed up your design process</li>
+                  <li>2. Build prototypes faster</li>
+                  <li>3. Automate repetitive tasks</li>
+                </ul>
               </CardContent>
             </Card>
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border">
