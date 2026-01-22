@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import instructorImage from "@/assets/instructor-cutout.png";
 
+const instructorImage = "/lovable-uploads/4754f949-e8fa-435b-89cc-7486ea6c12a1.png";
 const WorkshopHero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/20">
