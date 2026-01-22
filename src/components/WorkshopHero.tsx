@@ -26,11 +26,11 @@ const WorkshopHero = () => {
         <div className="absolute top-[55%] right-12 w-56 h-7 bg-accent/50 rounded-full rotate-[-20deg]" />
       </div>
       
-      {/* Curved arrow decoration */}
-      <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2">
-        <svg width="80" height="60" viewBox="0 0 80 60" fill="none" className="text-accent">
-          <path d="M10 50 Q 40 10, 70 30" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round"/>
-          <path d="M60 25 L 72 32 L 62 40" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+      {/* Curved arrow pointing to instructor */}
+      <div className="hidden lg:block absolute bottom-[30%] left-[45%]">
+        <svg width="120" height="80" viewBox="0 0 120 80" fill="none" className="text-primary">
+          <path d="M5 60 Q 30 70, 50 50 Q 70 30, 100 25" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round"/>
+          <path d="M90 18 L 105 25 L 92 35" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
 
@@ -87,11 +87,15 @@ const WorkshopHero = () => {
           </div>
           
           {/* Instructor Image */}
-          <div className="hidden lg:flex justify-center items-end">
+          <div className="hidden lg:flex flex-col justify-center items-center relative">
+            {/* Professional tag */}
+            <div className="absolute top-0 right-0 z-10 bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+              UX Lead @ Thomson Reuters, AI Products
+            </div>
             <img 
               src={instructorImage} 
-              alt="Workshop instructor" 
-              className="max-h-[600px] w-auto object-contain drop-shadow-2xl"
+              alt="Workshop instructor - Amira" 
+              className="max-h-[600px] w-auto object-contain drop-shadow-2xl mt-8"
             />
           </div>
         </div>
