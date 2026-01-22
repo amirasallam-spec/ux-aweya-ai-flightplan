@@ -47,7 +47,7 @@ const WorkshopSections = () => {
   ];
 
   const deliverables = [
-    "Redesigned application using AI",
+    "Redesign application using AI-Prototyping",
     "Clickable AI-augmented prototype",
     "Stakeholder-ready presentation deck"
   ];
