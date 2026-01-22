@@ -165,7 +165,7 @@ const WorkshopSections = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  AI usecases in design and research → AI UX design patterns → AI prototyping → Storytelling → Iteration
+                  1. Speed up your design process
                 </p>
               </CardContent>
             </Card>
