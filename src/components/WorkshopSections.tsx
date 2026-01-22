@@ -49,7 +49,7 @@ const WorkshopSections = () => {
   const deliverables = [
     "Redesign application using AI-Prototyping",
     "Clickable AI-augmented prototype",
-    "Stakeholder-ready presentation deck"
+    "Portfolio-ready project to present"
   ];
 
   const whyJoin = [
