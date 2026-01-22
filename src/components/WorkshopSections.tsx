@@ -121,8 +121,9 @@ const WorkshopSections = () => {
                   <Calendar className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                   <div>
                     <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
-                    <p className="text-lg font-bold text-foreground">Fridays @ 4:00 PM</p>
-                    <p className="text-muted-foreground">Oct 7 - Nov 11, 2025</p>
+                    <p className="text-sm font-semibold text-foreground">Sun 1, 8, 15 Feb: 7:00 PM - 9:00 PM</p>
+                    <p className="text-sm font-semibold text-foreground">Wed 4, 11, 18 Feb: 8:30 PM - 10:30 PM</p>
+                    <p className="text-sm text-muted-foreground mt-1">Bonus: Fri 13 Feb (Flexible time)</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
