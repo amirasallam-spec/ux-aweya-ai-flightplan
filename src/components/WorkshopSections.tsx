@@ -161,7 +161,7 @@ const WorkshopSections = () => {
           <div className="grid lg:grid-cols-2 gap-6 w-full">
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border">
               <CardHeader className="pb-2">
-                <CardTitle className="text-xl text-foreground">A-to-Z Workflow</CardTitle>
+                <CardTitle className="text-xl text-foreground">Vibe coding tools and process</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
