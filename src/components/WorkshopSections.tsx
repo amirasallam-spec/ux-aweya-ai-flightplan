@@ -278,7 +278,7 @@ const WorkshopSections = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">About the instructor</h2>
           <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
             <CardContent className="p-8">
-              <div className="aspect-[9/16] max-w-[300px] rounded-xl overflow-hidden mb-6 border border-border">
+              <div className="aspect-[9/16] max-w-[400px] rounded-xl overflow-hidden mb-6 border border-border">
                 <iframe
                   src="https://www.youtube.com/embed/wT7zRGignjQ"
                   title="About the instructor"
