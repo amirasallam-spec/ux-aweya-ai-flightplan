@@ -42,7 +42,7 @@ const WorkshopHero = () => {
           <div className="flex items-center gap-3 mb-6">
             <div className="w-8 h-0.5 bg-primary" />
             <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Master AI-Powered Development
+              Prototyping
             </span>
           </div>
           
