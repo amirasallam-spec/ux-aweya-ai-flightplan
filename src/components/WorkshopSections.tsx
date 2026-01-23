@@ -7,33 +7,33 @@ const WorkshopSections = () => {
   const sessions = [
     {
       number: "01",
-      title: "AI Usecases in design and research",
-      description: "Understand AI usecases in design, research, a11y and UX writing"
+      title: "Vibe coding introduction",
+      description: "Usecases and limitations. How it fits in the UX Process"
     },
     {
       number: "02",
-      title: "Define the challenge",
-      description: "Introductions, gather pain points and requirements"
+      title: "Vibe coding tool #1",
+      description: "Prompt best practices and a mini-project practice"
     },
     {
       number: "03",
-      title: "AI workflow integrated design",
-      description: "Integrate AI into the redesigned app and understanding its limitations"
+      title: "Vibe coding tool #2",
+      description: "Design system & theming for Stakeholder quick presentations and a mini-project practice"
     },
     {
       number: "04",
-      title: "AI prototyping",
-      description: "Test prompts, build flows, validate rapidly"
+      title: "Vibe coding tool #3",
+      description: "AI Prototyping and tools summary"
     },
     {
       number: "05",
-      title: "Storytelling and presentation",
-      description: "Narrative, visuals, delivery"
+      title: "Beyond AI-Prototyping",
+      description: "Automating workflows + Final project assignment"
     },
     {
       number: "06",
-      title: "Feedback to final",
-      description: "Present, iterate, and refine after critique"
+      title: "Final project",
+      description: "Presentations and reviews"
     }
   ];
 
