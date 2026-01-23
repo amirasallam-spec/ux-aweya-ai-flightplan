@@ -311,7 +311,7 @@ const WorkshopSections = () => {
               </div>
               <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">Ready to level up?</h2>
               <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
-                Secure your seat for the last UXaweya workshop in 2025. Starts Friday, Oct 7. 9950 LE.
+                Secure your seat and up-skill yourself in Q1 2026 before Ramadan begins.
               </p>
               <Button 
                 size="lg" 
