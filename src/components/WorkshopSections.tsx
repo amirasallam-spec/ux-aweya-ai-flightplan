@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
+import DecorativeElements from "./DecorativeElements";
 
 const WorkshopSections = () => {
   const sessions = [
@@ -76,8 +77,46 @@ const WorkshopSections = () => {
   ];
 
   return (
-    <div className="py-20 px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto space-y-24">
+    <div className="py-20 px-6 lg:px-12 relative">
+      {/* Global decorative elements */}
+      <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
+        {/* Top section decorations */}
+        <div className="absolute top-32 right-8 w-48 h-6 bg-accent/15 rounded-full rotate-[-25deg]" />
+        <div className="absolute top-48 right-16 w-32 h-4 bg-accent/20 rounded-full rotate-[-20deg]" />
+        <div className="absolute top-24 right-24 text-accent/40 text-2xl font-light">+</div>
+        <div className="absolute top-56 right-8 text-accent/30 text-xl font-light">+</div>
+        
+        {/* Middle section decorations */}
+        <div className="absolute top-[30%] right-4 w-56 h-5 bg-accent/15 rounded-full rotate-[-30deg]" />
+        <div className="absolute top-[35%] right-20 w-40 h-4 bg-accent/20 rounded-full rotate-[-25deg]" />
+        <div className="absolute top-[32%] right-32 text-accent/35 text-3xl font-light">+</div>
+        
+        {/* Session outline section */}
+        <div className="absolute top-[50%] right-8 w-48 h-5 bg-accent/20 rounded-full rotate-[-20deg]" />
+        <div className="absolute top-[52%] right-24 w-36 h-4 bg-accent/15 rounded-full rotate-[-35deg]" />
+        <div className="absolute top-[48%] right-16 text-accent/30 text-2xl font-light">+</div>
+        <div className="absolute top-[54%] right-40 text-accent/25 text-xl font-light">+</div>
+        
+        {/* Why join section */}
+        <div className="absolute top-[65%] right-12 w-52 h-5 bg-accent/15 rounded-full rotate-[-28deg]" />
+        <div className="absolute top-[68%] right-4 w-40 h-4 bg-accent/20 rounded-full rotate-[-22deg]" />
+        <div className="absolute top-[66%] right-28 text-accent/35 text-2xl font-light">+</div>
+        
+        {/* Testimonials section */}
+        <div className="absolute top-[80%] right-8 w-44 h-5 bg-accent/20 rounded-full rotate-[-25deg]" />
+        <div className="absolute top-[82%] right-20 w-32 h-4 bg-accent/15 rounded-full rotate-[-30deg]" />
+        <div className="absolute top-[78%] right-12 text-accent/30 text-xl font-light">+</div>
+        <div className="absolute top-[84%] right-36 text-accent/25 text-2xl font-light">+</div>
+        
+        {/* Left side scattered elements for balance */}
+        <div className="absolute top-[25%] left-4 text-accent/20 text-xl font-light">+</div>
+        <div className="absolute top-[45%] left-8 text-accent/25 text-2xl font-light">+</div>
+        <div className="absolute top-[70%] left-4 text-accent/20 text-xl font-light">+</div>
+        <div className="absolute top-[40%] left-2 w-24 h-3 bg-accent/10 rounded-full rotate-[20deg]" />
+        <div className="absolute top-[60%] left-4 w-20 h-3 bg-accent/10 rounded-full rotate-[25deg]" />
+      </div>
+      
+      <div className="max-w-7xl mx-auto space-y-24 relative z-10">
         
         {/* What it is */}
         <ScrollReveal>
