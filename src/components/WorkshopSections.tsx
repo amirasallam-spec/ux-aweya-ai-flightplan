@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const WorkshopSections = () => {
   const sessions = [
@@ -79,262 +80,285 @@ const WorkshopSections = () => {
       <div className="max-w-7xl mx-auto space-y-24">
         
         {/* What it is */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Overview
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What it is</h2>
-          <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
-            <CardContent className="p-8">
-              <p className="text-lg text-muted-foreground mb-6">
-                A 6-session, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
-              </p>
-              <div className="text-left">
-                <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
-                <p className="text-muted-foreground">All levels. Designers, developers, freelancers, PMs.</p>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Overview
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What it is</h2>
+            <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
+              <CardContent className="p-8">
+                <p className="text-lg text-muted-foreground mb-6">
+                  A 6-session, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
+                </p>
+                <div className="text-left">
+                  <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
+                  <p className="text-muted-foreground">All levels. Designers, developers, freelancers, PMs.</p>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+        </ScrollReveal>
 
         {/* Schedule and Price */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Details
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Schedule and Price</h2>
-          <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
-            <CardContent className="p-8">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div className="flex items-start gap-4">
-                  <Calendar className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
-                    <p className="text-sm font-semibold text-foreground">Sun 1, 8, 15 Feb: 7:00 PM - 9:00 PM</p>
-                    <p className="text-sm font-semibold text-foreground">Wed 4, 11, 18 Feb: 8:30 PM - 10:30 PM</p>
-                    <p className="text-sm text-muted-foreground mt-1">Bonus: Fri 13 Feb (Flexible time)</p>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Details
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Schedule and Price</h2>
+            <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
+              <CardContent className="p-8">
+                <div className="grid md:grid-cols-3 gap-8">
+                  <div className="flex items-start gap-4">
+                    <Calendar className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
+                      <p className="text-sm font-semibold text-foreground">Sun 1, 8, 15 Feb: 7:00 PM - 9:00 PM</p>
+                      <p className="text-sm font-semibold text-foreground">Wed 4, 11, 18 Feb: 8:30 PM - 10:30 PM</p>
+                      <p className="text-sm text-muted-foreground mt-1">Bonus: Fri 13 Feb (Flexible time)</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <BookOpen className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
+                      <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
+                      <p className="text-muted-foreground">Online - Microsoft Teams</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">LE</div>
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
+                      <p className="text-lg font-bold text-foreground">9950 LE</p>
+                      <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
+                        Limited seats
+                      </Badge>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <BookOpen className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-                    <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
-                    <p className="text-muted-foreground">Online - Microsoft Teams</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">LE</div>
-                  <div>
-                    <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-                    <p className="text-lg font-bold text-foreground">9950 LE</p>
-                    <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
-                      Limited seats
-                    </Badge>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </section>
+              </CardContent>
+            </Card>
+          </section>
+        </ScrollReveal>
 
         {/* What you'll learn and ship */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Outcomes
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What you'll learn and ship</h2>
-          <div className="grid lg:grid-cols-2 gap-6 w-full">
-            <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-xl text-foreground">Vibe coding tools and process</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="text-muted-foreground space-y-2">
-                  <li>1. Speed up your design process</li>
-                  <li>2. Build prototypes faster</li>
-                  <li>3. Automate repetitive tasks</li>
-                  <li>4. Understand advantages and limitations of tools</li>
-                  <li>5. Abiding by the design system for consistent stakeholder presentation</li>
-                </ul>
-              </CardContent>
-            </Card>
-            <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-xl text-foreground">Deliverables</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <ul className="space-y-3">
-                  {deliverables.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <span className="text-muted-foreground">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </CardContent>
-            </Card>
-          </div>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Outcomes
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What you'll learn and ship</h2>
+            <div className="grid lg:grid-cols-2 gap-6 w-full">
+              <ScrollReveal delay={0.1} direction="left">
+                <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-xl text-foreground">Vibe coding tools and process</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="text-muted-foreground space-y-2">
+                      <li>1. Speed up your design process</li>
+                      <li>2. Build prototypes faster</li>
+                      <li>3. Automate repetitive tasks</li>
+                      <li>4. Understand advantages and limitations of tools</li>
+                      <li>5. Abiding by the design system for consistent stakeholder presentation</li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+              <ScrollReveal delay={0.2} direction="right">
+                <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full">
+                  <CardHeader className="pb-2">
+                    <CardTitle className="text-xl text-foreground">Deliverables</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {deliverables.map((item, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                          <span className="text-muted-foreground">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </ScrollReveal>
+            </div>
+          </section>
+        </ScrollReveal>
 
         {/* Session outline */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Curriculum
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Session outline</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-            {sessions.map((session, index) => (
-              <Card 
-                key={index} 
-                className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300"
-              >
-                <CardHeader className="pb-2">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
-                      {session.number}
-                    </div>
-                    <CardTitle className="text-lg text-foreground">{session.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{session.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Curriculum
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Session outline</h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+              {sessions.map((session, index) => (
+                <ScrollReveal key={index} delay={index * 0.1}>
+                  <Card 
+                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
+                  >
+                    <CardHeader className="pb-2">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
+                          {session.number}
+                        </div>
+                        <CardTitle className="text-lg text-foreground">{session.title}</CardTitle>
+                      </div>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-muted-foreground">{session.description}</p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+          </section>
+        </ScrollReveal>
 
 
         {/* Why join */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Benefits
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Why join</h2>
-          <div className="grid md:grid-cols-3 gap-6 w-full">
-            {whyJoin.map((reason, index) => (
-              <Card 
-                key={index} 
-                className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border"
-              >
-                <CardContent className="p-6">
-                  <Presentation className="w-8 h-8 text-primary mb-4" />
-                  <p className="text-muted-foreground">{reason}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Benefits
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Why join</h2>
+            <div className="grid md:grid-cols-3 gap-6 w-full">
+              {whyJoin.map((reason, index) => (
+                <ScrollReveal key={index} delay={index * 0.1}>
+                  <Card 
+                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full"
+                  >
+                    <CardContent className="p-6">
+                      <Presentation className="w-8 h-8 text-primary mb-4" />
+                      <p className="text-muted-foreground">{reason}</p>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+          </section>
+        </ScrollReveal>
 
         {/* About the instructor */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Instructor
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">About the instructor</h2>
-          <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
-            <CardContent className="p-8">
-              <div className="aspect-[9/16] max-w-[400px] rounded-xl overflow-hidden mb-6 border border-border">
-                <iframe
-                  src="https://www.youtube.com/embed/wT7zRGignjQ"
-                  title="About the instructor"
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-              <p className="text-muted-foreground">
-                Instructor bio and details will be added here. Learn more about the experience and expertise behind this workshop.
-              </p>
-            </CardContent>
-          </Card>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Instructor
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">About the instructor</h2>
+            <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
+              <CardContent className="p-8">
+                <div className="aspect-[9/16] max-w-[400px] rounded-xl overflow-hidden mb-6 border border-border">
+                  <iframe
+                    src="https://www.youtube.com/embed/wT7zRGignjQ"
+                    title="About the instructor"
+                    className="w-full h-full"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
+                <p className="text-muted-foreground">
+                  Instructor bio and details will be added here. Learn more about the experience and expertise behind this workshop.
+                </p>
+              </CardContent>
+            </Card>
+          </section>
+        </ScrollReveal>
 
         {/* Testimonials */}
-        <section className="animate-fade-up">
-          <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-0.5 bg-primary" />
-            <span className="text-primary font-medium tracking-wide uppercase text-sm">
-              Testimonials
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What past attendees say</h2>
-          <div className="grid md:grid-cols-3 gap-6 w-full">
-            {testimonials.map((testimonial, index) => (
-              <Card 
-                key={index} 
-                className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border"
-              >
-                <CardContent className="p-6">
-                  <Quote className="w-8 h-8 text-primary/40 mb-4" />
-                  <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm overflow-hidden">
-                      <img 
-                        src={testimonial.avatar} 
-                        alt={testimonial.name}
-                        className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.currentTarget.style.display = 'none';
-                          e.currentTarget.parentElement!.textContent = testimonial.initials;
-                        }}
-                      />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-foreground">{testimonial.name}</p>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
+        <ScrollReveal>
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-8 h-0.5 bg-primary" />
+              <span className="text-primary font-medium tracking-wide uppercase text-sm">
+                Testimonials
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What past attendees say</h2>
+            <div className="grid md:grid-cols-3 gap-6 w-full">
+              {testimonials.map((testimonial, index) => (
+                <ScrollReveal key={index} delay={index * 0.15}>
+                  <Card 
+                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full"
+                  >
+                    <CardContent className="p-6">
+                      <Quote className="w-8 h-8 text-primary/40 mb-4" />
+                      <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm overflow-hidden">
+                          <img 
+                            src={testimonial.avatar} 
+                            alt={testimonial.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                              e.currentTarget.parentElement!.textContent = testimonial.initials;
+                            }}
+                          />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-foreground">{testimonial.name}</p>
+                          <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </ScrollReveal>
+              ))}
+            </div>
+          </section>
+        </ScrollReveal>
 
         {/* Final CTA */}
-        <section className="animate-fade-up">
-          <Card className="bg-primary rounded-2xl shadow-lg border-0 w-full">
-            <CardContent className="p-12">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-0.5 bg-primary-foreground/50" />
-                <span className="text-primary-foreground/80 font-medium tracking-wide uppercase text-sm">
-                  Enroll Now
-                </span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">Ready to level up?</h2>
-              <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
-                Secure your seat and up-skill yourself in Q1 2026 before Ramadan begins.
-              </p>
-              <Button 
-                size="lg" 
-                className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-                onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
-              >
-                Fill the form to enroll
-                <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </CardContent>
-          </Card>
-        </section>
+        <ScrollReveal>
+          <section>
+            <Card className="bg-primary rounded-2xl shadow-lg border-0 w-full">
+              <CardContent className="p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-8 h-0.5 bg-primary-foreground/50" />
+                  <span className="text-primary-foreground/80 font-medium tracking-wide uppercase text-sm">
+                    Enroll Now
+                  </span>
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">Ready to level up?</h2>
+                <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
+                  Secure your seat and up-skill yourself in Q1 2026 before Ramadan begins.
+                </p>
+                <Button 
+                  size="lg" 
+                  className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
+                  onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
+                >
+                  Fill the form to enroll
+                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </CardContent>
+            </Card>
+          </section>
+        </ScrollReveal>
 
       </div>
     </div>
