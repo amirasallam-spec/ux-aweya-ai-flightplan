@@ -64,7 +64,7 @@ const WorkshopHero = () => {
           <div className="flex flex-wrap gap-4 mb-10">
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Starting</p>
-              <p className="text-lg font-bold text-foreground">Friday, Jan 30</p>
+              <p className="text-lg font-bold text-foreground">Sunday, Feb 1</p>
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
