@@ -52,22 +52,25 @@ const WorkshopSections = () => {
 
   const testimonials = [
     {
-      name: "Sarah M.",
-      role: "Product Designer",
-      quote: "This workshop completely transformed how I approach AI in my design workflow. The hands-on sessions were incredibly valuable.",
-      avatar: "SM"
+      name: "Sarah Ayman",
+      role: "UI/UX Designer @ Dahab Masr",
+      quote: "Huge thanks to Amira Sallam, who was more than just a supportive instructor — she was a real mentor to all of us. It was such a unique and inspiring experience in my UX path. 💛",
+      avatar: "/lovable-uploads/sarah-ayman.png",
+      initials: "SA"
     },
     {
-      name: "Ahmed K.",
-      role: "UX Lead",
-      quote: "Finally, a practical workshop that goes beyond theory. I left with real skills and portfolio pieces I'm proud of.",
-      avatar: "AK"
+      name: "Soliman Shaban",
+      role: "Principal Product Designer | GenAI-Powered",
+      quote: "What a great experience joining the first UX for AI Workshop! Explored how AI can shape smarter, human-centered design. Built real AI-based projects applying AI design guidelines. Met amazing designers passionate about AI in UX/UI.",
+      avatar: "/lovable-uploads/soliman-shaban.png",
+      initials: "SS"
     },
     {
-      name: "Nour H.",
-      role: "Freelance Designer",
-      quote: "The best investment I've made in my career this year. The instructor's expertise and teaching style made complex concepts accessible.",
-      avatar: "NH"
+      name: "Samiha Albakri",
+      role: "Product Designer | Designing Scalable Fintech Experiences",
+      quote: "Amira is an absolute rockstar. She combined deep expertise with a genuine willingness to share knowledge, no cookie-cutter slides or nonsense. Just honest, actionable insights you can actually apply.",
+      avatar: "/lovable-uploads/samiha-albakri.png",
+      initials: "SA"
     }
   ];
 
@@ -285,8 +288,16 @@ const WorkshopSections = () => {
                   <Quote className="w-8 h-8 text-primary/40 mb-4" />
                   <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
-                      {testimonial.avatar}
+                    <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm overflow-hidden">
+                      <img 
+                        src={testimonial.avatar} 
+                        alt={testimonial.name}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                          e.currentTarget.parentElement!.textContent = testimonial.initials;
+                        }}
+                      />
                     </div>
                     <div>
                       <p className="font-semibold text-foreground">{testimonial.name}</p>
