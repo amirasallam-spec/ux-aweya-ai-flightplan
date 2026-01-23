@@ -45,7 +45,7 @@ const WorkshopSections = () => {
   ];
 
   const whyJoin = [
-    "Learn something new every session",
+    "Learn something new every session and become part of an AI-powered design community",
     "Produce portfolio-ready artifacts",
     "Practical, team-ready workflow you can apply immediately"
   ];
