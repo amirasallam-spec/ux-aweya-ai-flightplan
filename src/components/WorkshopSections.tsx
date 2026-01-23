@@ -4,80 +4,54 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import DecorativeElements from "./DecorativeElements";
-
 const WorkshopSections = () => {
-  const sessions = [
-    {
-      number: "01",
-      title: "Vibe coding introduction",
-      description: "Usecases and limitations. How it fits in the UX Process"
-    },
-    {
-      number: "02",
-      title: "Vibe coding tool #1",
-      description: "Prompt best practices and a mini-project practice"
-    },
-    {
-      number: "03",
-      title: "Vibe coding tool #2",
-      description: "Design system & theming for Stakeholder quick presentations and a mini-project practice"
-    },
-    {
-      number: "04",
-      title: "Vibe coding tool #3",
-      description: "AI Prototyping and tools summary"
-    },
-    {
-      number: "05",
-      title: "Beyond AI-Prototyping",
-      description: "Automating workflows + Final project assignment"
-    },
-    {
-      number: "06",
-      title: "Final project",
-      description: "Presentations and reviews"
-    }
-  ];
-
-
-  const deliverables = [
-    "Redesign application using AI-Prototyping",
-    "Clickable AI-augmented prototype",
-    "Portfolio-ready project to present"
-  ];
-
-  const whyJoin = [
-    "Learn something new every session and become part of an AI-powered design community",
-    "Produce portfolio-ready artifacts and differentiate yourself among the crowd",
-    "Practical, team-ready workflow you can apply immediately"
-  ];
-
-  const testimonials = [
-    {
-      name: "Sarah Ayman",
-      role: "UI/UX Designer @ Dahab Masr",
-      quote: "Huge thanks to Amira Sallam, who was more than just a supportive instructor — she was a real mentor to all of us. It was such a unique and inspiring experience in my UX path. 💛",
-      avatar: "/lovable-uploads/sarah-ayman.png",
-      initials: "SA"
-    },
-    {
-      name: "Soliman Shaban",
-      role: "Principal Product Designer | GenAI-Powered",
-      quote: "What a great experience joining the first UX for AI Workshop! Explored how AI can shape smarter, human-centered design. Built real AI-based projects applying AI design guidelines. Met amazing designers passionate about AI in UX/UI.",
-      avatar: "/lovable-uploads/soliman-shaban.png",
-      initials: "SS"
-    },
-    {
-      name: "Samiha Albakri",
-      role: "Product Designer | Designing Scalable Fintech Experiences",
-      quote: "Amira is an absolute rockstar. She combined deep expertise with a genuine willingness to share knowledge, no cookie-cutter slides or nonsense. Just honest, actionable insights you can actually apply.",
-      avatar: "/lovable-uploads/samiha-albakri.png",
-      initials: "SA"
-    }
-  ];
-
-  return (
-    <div className="py-20 px-6 lg:px-12 relative">
+  const sessions = [{
+    number: "01",
+    title: "Vibe coding introduction",
+    description: "Usecases and limitations. How it fits in the UX Process"
+  }, {
+    number: "02",
+    title: "Vibe coding tool #1",
+    description: "Prompt best practices and a mini-project practice"
+  }, {
+    number: "03",
+    title: "Vibe coding tool #2",
+    description: "Design system & theming for Stakeholder quick presentations and a mini-project practice"
+  }, {
+    number: "04",
+    title: "Vibe coding tool #3",
+    description: "AI Prototyping and tools summary"
+  }, {
+    number: "05",
+    title: "Beyond AI-Prototyping",
+    description: "Automating workflows + Final project assignment"
+  }, {
+    number: "06",
+    title: "Final project",
+    description: "Presentations and reviews"
+  }];
+  const deliverables = ["Redesign application using AI-Prototyping", "Clickable AI-augmented prototype", "Portfolio-ready project to present"];
+  const whyJoin = ["Learn something new every session and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
+  const testimonials = [{
+    name: "Sarah Ayman",
+    role: "UI/UX Designer @ Dahab Masr",
+    quote: "Huge thanks to Amira Sallam, who was more than just a supportive instructor — she was a real mentor to all of us. It was such a unique and inspiring experience in my UX path. 💛",
+    avatar: "/lovable-uploads/sarah-ayman.png",
+    initials: "SA"
+  }, {
+    name: "Soliman Shaban",
+    role: "Principal Product Designer | GenAI-Powered",
+    quote: "What a great experience joining the first UX for AI Workshop! Explored how AI can shape smarter, human-centered design. Built real AI-based projects applying AI design guidelines. Met amazing designers passionate about AI in UX/UI.",
+    avatar: "/lovable-uploads/soliman-shaban.png",
+    initials: "SS"
+  }, {
+    name: "Samiha Albakri",
+    role: "Product Designer | Designing Scalable Fintech Experiences",
+    quote: "Amira is an absolute rockstar. She combined deep expertise with a genuine willingness to share knowledge, no cookie-cutter slides or nonsense. Just honest, actionable insights you can actually apply.",
+    avatar: "/lovable-uploads/samiha-albakri.png",
+    initials: "SA"
+  }];
+  return <div className="py-20 px-6 lg:px-12 relative">
       {/* Global decorative elements */}
       <div className="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none">
         {/* Top section decorations */}
@@ -176,7 +150,7 @@ const WorkshopSections = () => {
                     <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">LE</div>
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-                      <p className="text-lg font-bold text-foreground">9950 LE</p>
+                      <p className="text-lg font-bold text-foreground">9500 LE</p>
                       <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
                         Limited seats
                       </Badge>
@@ -222,12 +196,10 @@ const WorkshopSections = () => {
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-3">
-                      {deliverables.map((item, index) => (
-                        <li key={index} className="flex items-start gap-3">
+                      {deliverables.map((item, index) => <li key={index} className="flex items-start gap-3">
                           <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
                           <span className="text-muted-foreground">{item}</span>
-                        </li>
-                      ))}
+                        </li>)}
                     </ul>
                   </CardContent>
                 </Card>
@@ -247,11 +219,8 @@ const WorkshopSections = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Session outline</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-              {sessions.map((session, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
-                  <Card 
-                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300 h-full"
-                  >
+              {sessions.map((session, index) => <ScrollReveal key={index} delay={index * 0.1}>
+                  <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300 h-full">
                     <CardHeader className="pb-2">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm">
@@ -264,8 +233,7 @@ const WorkshopSections = () => {
                       <p className="text-muted-foreground">{session.description}</p>
                     </CardContent>
                   </Card>
-                </ScrollReveal>
-              ))}
+                </ScrollReveal>)}
             </div>
           </section>
         </ScrollReveal>
@@ -282,18 +250,14 @@ const WorkshopSections = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Why join</h2>
             <div className="grid md:grid-cols-3 gap-6 w-full">
-              {whyJoin.map((reason, index) => (
-                <ScrollReveal key={index} delay={index * 0.1}>
-                  <Card 
-                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full"
-                  >
+              {whyJoin.map((reason, index) => <ScrollReveal key={index} delay={index * 0.1}>
+                  <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full">
                     <CardContent className="p-6">
                       <Presentation className="w-8 h-8 text-primary mb-4" />
                       <p className="text-muted-foreground">{reason}</p>
                     </CardContent>
                   </Card>
-                </ScrollReveal>
-              ))}
+                </ScrollReveal>)}
             </div>
           </section>
         </ScrollReveal>
@@ -311,13 +275,7 @@ const WorkshopSections = () => {
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
               <CardContent className="p-8">
                 <div className="aspect-[9/16] max-w-[400px] rounded-xl overflow-hidden mb-6 border border-border">
-                  <iframe
-                    src="https://www.youtube.com/embed/wT7zRGignjQ"
-                    title="About the instructor"
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  />
+                  <iframe src="https://www.youtube.com/embed/wT7zRGignjQ" title="About the instructor" className="w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
                 </div>
                 <p className="text-muted-foreground">
                   Instructor bio and details will be added here. Learn more about the experience and expertise behind this workshop.
@@ -338,25 +296,17 @@ const WorkshopSections = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">What past attendees say</h2>
             <div className="grid md:grid-cols-3 gap-6 w-full">
-              {testimonials.map((testimonial, index) => (
-                <ScrollReveal key={index} delay={index * 0.15}>
-                  <Card 
-                    className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full"
-                  >
+              {testimonials.map((testimonial, index) => <ScrollReveal key={index} delay={index * 0.15}>
+                  <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border h-full">
                     <CardContent className="p-6">
                       <Quote className="w-8 h-8 text-primary/40 mb-4" />
                       <p className="text-muted-foreground mb-6 italic">"{testimonial.quote}"</p>
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-sm overflow-hidden">
-                          <img 
-                            src={testimonial.avatar} 
-                            alt={testimonial.name}
-                            className="w-full h-full object-cover"
-                            onError={(e) => {
-                              e.currentTarget.style.display = 'none';
-                              e.currentTarget.parentElement!.textContent = testimonial.initials;
-                            }}
-                          />
+                          <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" onError={e => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentElement!.textContent = testimonial.initials;
+                      }} />
                         </div>
                         <div>
                           <p className="font-semibold text-foreground">{testimonial.name}</p>
@@ -365,8 +315,7 @@ const WorkshopSections = () => {
                       </div>
                     </CardContent>
                   </Card>
-                </ScrollReveal>
-              ))}
+                </ScrollReveal>)}
             </div>
           </section>
         </ScrollReveal>
@@ -386,11 +335,7 @@ const WorkshopSections = () => {
                 <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
                   Secure your seat and up-skill yourself in Q1 2026 before Ramadan begins.
                 </p>
-                <Button 
-                  size="lg" 
-                  className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
-                >
+                <Button size="lg" className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}>
                   Fill the form to enroll
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -400,8 +345,6 @@ const WorkshopSections = () => {
         </ScrollReveal>
 
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default WorkshopSections;
