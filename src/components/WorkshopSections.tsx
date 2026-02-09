@@ -135,7 +135,7 @@ const WorkshopSections = () => {
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
                       
                       <p className="text-sm font-semibold text-foreground">Wed 4, 11, 18 Feb: 8:30 PM - 10:30 PM</p>
-                      <p className="text-sm text-muted-foreground mt-1">Next Cohort begins 8 April, 2026</p>
+                      <p className="text-lg font-bold text-foreground mt-1">Next Cohort begins 8 April, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
