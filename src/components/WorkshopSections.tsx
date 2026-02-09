@@ -333,7 +333,7 @@ const WorkshopSections = () => {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary-foreground">Ready to level up?</h2>
                 <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
-                  Secure your seat and up-skill yourself in Q1 2026 before Ramadan begins.
+                  Secure your seat, you will be the first to know about our early bird prices when joining the waitlist.
                 </p>
                 <Button size="lg" className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}>
                   Join the Waitlist
