@@ -86,7 +86,7 @@ const WorkshopHero = () => {
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
               <div className="bg-card/90 backdrop-blur-md border border-border px-6 py-3 rounded-2xl shadow-xl">
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Your Instructor</p>
-                <p className="text-foreground font-semibold whitespace-nowrap">UX Lead</p>
+                <p className="text-sm text-muted-foreground font-semibold whitespace-nowrap">UX Lead</p>
                 <p className="text-sm text-muted-foreground whitespace-nowrap">Thomson Reuters, AI Products</p>
               </div>
             </div>
