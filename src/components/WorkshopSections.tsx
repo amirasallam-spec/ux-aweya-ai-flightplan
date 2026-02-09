@@ -335,7 +335,7 @@ const WorkshopSections = () => {
                 <p className="text-lg mb-8 text-primary-foreground/90 max-w-xl">
                   Secure your seat, you will be the first to know about our early bird prices when joining the waitlist.
                 </p>
-                <Button size="lg" className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}>
+                <Button size="lg" className="bg-background hover:bg-background/90 text-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/ofu27YWkK4gJYi8D7', '_blank')}>
                   Join the Waitlist
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
