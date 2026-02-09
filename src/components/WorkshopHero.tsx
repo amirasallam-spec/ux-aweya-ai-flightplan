@@ -4,14 +4,11 @@ import { ArrowRight } from "lucide-react";
 // Instructor image
 const instructorImage = "/lovable-uploads/amira-instructor.png";
 const WorkshopHero = () => {
-  return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/20">
+  return <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/20">
       {/* Decorative elements */}
       <div className="absolute top-16 left-8 w-16 h-16 opacity-60">
         <div className="grid grid-cols-4 gap-1">
-          {[...Array(16)].map((_, i) => (
-            <div key={i} className="w-2 h-2 rounded-full bg-accent" />
-          ))}
+          {[...Array(16)].map((_, i) => <div key={i} className="w-2 h-2 rounded-full bg-accent" />)}
         </div>
       </div>
       
@@ -29,8 +26,8 @@ const WorkshopHero = () => {
       {/* Curved arrow pointing to instructor */}
       <div className="hidden lg:block absolute bottom-[30%] left-[45%]">
         <svg width="120" height="80" viewBox="0 0 120 80" fill="none" className="text-primary">
-          <path d="M5 60 Q 30 70, 50 50 Q 70 30, 100 25" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round"/>
-          <path d="M90 18 L 105 25 L 92 35" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+          <path d="M5 60 Q 30 70, 50 50 Q 70 30, 100 25" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" />
+          <path d="M90 18 L 105 25 L 92 35" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
 
@@ -76,11 +73,7 @@ const WorkshopHero = () => {
             </div>
           </div>
           
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group"
-            onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}
-          >
+          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/RjhzriKMfL4GvBmF7', '_blank')}>
             Secure Your Seat Now
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
@@ -88,16 +81,13 @@ const WorkshopHero = () => {
           
           {/* Instructor Image */}
           <div className="hidden lg:flex flex-col justify-end items-center relative">
-            <img 
-              src={instructorImage} 
-              alt="Workshop instructor - Amira" 
-              className="max-h-[600px] w-auto object-contain drop-shadow-2xl"
-            />
+            <img src={instructorImage} alt="Workshop instructor - Amira" className="max-h-[600px] w-auto object-contain drop-shadow-2xl" />
             {/* Professional tag overlay at bottom */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10">
               <div className="bg-card/90 backdrop-blur-md border border-border px-6 py-3 rounded-2xl shadow-xl">
                 <p className="text-xs text-muted-foreground uppercase tracking-wider mb-1">Your Instructor</p>
-                <p className="text-foreground font-semibold whitespace-nowrap">UX Lead @ Thomson Reuters, AI Products</p>
+                <p className="text-foreground font-semibold whitespace-nowrap">UX Lead
+Thomson Reuters, AI Products</p>
               </div>
             </div>
           </div>
@@ -106,8 +96,6 @@ const WorkshopHero = () => {
       
       {/* Bottom gradient fade */}
       <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
-    </section>
-  );
+    </section>;
 };
-
 export default WorkshopHero;
