@@ -145,16 +145,6 @@ const WorkshopSections = () => {
                       <p className="text-muted-foreground">Online - Microsoft Teams</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
-                    <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">LE</div>
-                    <div>
-                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-                      <p className="text-lg font-bold text-foreground">9500 LE</p>
-                      <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
-                        Limited seats
-                      </Badge>
-                    </div>
-                  </div>
                 </div>
               </CardContent>
             </Card>

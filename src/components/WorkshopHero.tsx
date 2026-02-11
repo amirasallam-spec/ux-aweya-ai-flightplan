@@ -64,10 +64,6 @@ const WorkshopHero = () => {
               <p className="text-lg font-bold text-foreground">Wed, April 8</p>
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
-              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-              <p className="text-lg font-bold text-foreground">9500 LE</p>
-            </div>
-            <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Sessions</p>
               <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
             </div>
