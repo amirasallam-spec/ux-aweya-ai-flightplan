@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useGeoPricing } from "@/hooks/use-geo-pricing";
 
 // Instructor image
 const instructorImage = "/lovable-uploads/amira-instructor.png";
 const WorkshopHero = () => {
+  const { price, currency, loading } = useGeoPricing();
   return <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/20">
       {/* Decorative elements */}
       <div className="absolute top-16 left-8 w-16 h-16 opacity-60">
@@ -62,6 +64,12 @@ const WorkshopHero = () => {
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Starting</p>
               <p className="text-lg font-bold text-foreground">Wed, April 8</p>
+            </div>
+            <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
+              <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
+              <p className="text-lg font-bold text-foreground">
+                {loading ? "..." : `${currency === "USD" ? "$" : ""}${price}${currency !== "USD" ? ` ${currency}` : ""}`}
+              </p>
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Sessions</p>

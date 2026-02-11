@@ -4,7 +4,9 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 import DecorativeElements from "./DecorativeElements";
+import { useGeoPricing } from "@/hooks/use-geo-pricing";
 const WorkshopSections = () => {
+  const { price, currency, loading } = useGeoPricing();
   const sessions = [{
     number: "01",
     title: "Vibe coding introduction",
@@ -143,6 +145,18 @@ const WorkshopSections = () => {
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
                       <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
                       <p className="text-muted-foreground">Online - Microsoft Teams</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">{currency === "USD" ? "$" : "LE"}</div>
+                    <div>
+                      <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
+                      <p className="text-lg font-bold text-foreground">
+                        {loading ? "..." : `${currency === "USD" ? "$" : ""}${price}${currency !== "USD" ? ` ${currency}` : ""}`}
+                      </p>
+                      <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
+                        Limited seats
+                      </Badge>
                     </div>
                   </div>
                 </div>
