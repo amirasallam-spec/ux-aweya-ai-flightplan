@@ -29,7 +29,7 @@ const WorkshopSections = () => {
     description: "Agentic design workflows and all about MCPs"
   }, {
     number: "06",
-    title: "AI tools tips and tricks",
+    title: "Claude AI tips and tricks",
     description: "Tips and tricks to speed up your workflow and architect your files better for future projects"
   }, {
     number: "07",
