@@ -13,16 +13,16 @@ const WorkshopSections = () => {
     description: "Usecases and limitations. How it fits in the UX Process"
   }, {
     number: "02",
-    title: "Vibe coding tool #1",
-    description: "Prompt best practices and a mini-project practice"
+    title: "Prompt Engineering best practices",
+    description: "Prompt Engineering best practices + Vibe coding tool #1"
   }, {
     number: "03",
-    title: "Vibe coding tool #2",
-    description: "Design system & theming for Stakeholder quick presentations and a mini-project practice"
+    title: "Vibe coding framework",
+    description: "Vibe coding framework + Vibe coding tool #2"
   }, {
     number: "04",
-    title: "Vibe coding tool #3",
-    description: "AI Prototyping and tools summary"
+    title: "Design system workflow",
+    description: "Design system workflow in vibe coding tools + Figma Make"
   }, {
     number: "05",
     title: "Beyond AI-Prototyping",
