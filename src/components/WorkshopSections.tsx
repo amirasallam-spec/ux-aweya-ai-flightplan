@@ -220,7 +220,7 @@ const WorkshopSections = () => {
                 Curriculum
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Session outline</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Module outline</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               {sessions.map((session, index) => <ScrollReveal key={index} delay={index * 0.1}>
                   <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300 h-full">
