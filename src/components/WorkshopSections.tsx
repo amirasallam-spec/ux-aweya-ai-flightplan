@@ -33,7 +33,7 @@ const WorkshopSections = () => {
     description: "Presentations and reviews"
   }];
   const deliverables = ["Redesign application using AI-Prototyping", "Clickable AI-augmented prototype", "Portfolio-ready project to present"];
-  const whyJoin = ["Learn something new every session and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
+  const whyJoin = ["Learn something new every module and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
   const testimonials = [{
     name: "Sarah Ayman",
     role: "UI/UX Designer @ Dahab Masr",
