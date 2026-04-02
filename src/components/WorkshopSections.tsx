@@ -143,7 +143,7 @@ const WorkshopSections = () => {
                     <BookOpen className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-                      <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
+                      <p className="text-lg font-bold text-foreground">6 Modules</p>
                       <p className="text-muted-foreground">Online - Microsoft Teams</p>
                     </div>
                   </div>
