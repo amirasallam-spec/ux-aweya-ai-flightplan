@@ -26,11 +26,15 @@ const WorkshopSections = () => {
   }, {
     number: "05",
     title: "Beyond AI-Prototyping",
-    description: "Automating workflows + Final project assignment"
+    description: "Agentic design workflows and all about MCPs"
   }, {
     number: "06",
+    title: "AI tools tips and tricks",
+    description: "Tips and tricks to speed up your workflow and architect your files better for future projects"
+  }, {
+    number: "07",
     title: "Final project",
-    description: "Presentations and reviews"
+    description: "Project review and presentations"
   }];
   const deliverables = ["Redesign application using AI-Prototyping", "Clickable AI-augmented prototype", "Portfolio-ready project to present"];
   const whyJoin = ["Learn something new every module and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
