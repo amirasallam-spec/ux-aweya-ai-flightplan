@@ -52,11 +52,11 @@ const WorkshopHero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl mb-2 text-foreground/80 font-medium">
-            From AI-powered prototyping to automating workflows
+            From AI-powered prototyping to agentic design workflows
           </p>
           
           <p className="text-lg mb-8 text-muted-foreground max-w-xl">
-            A 6-session, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
+            A 6-module, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
           </p>
           
           {/* Info cards */}
