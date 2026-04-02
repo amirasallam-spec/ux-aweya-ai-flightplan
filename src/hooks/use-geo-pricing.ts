@@ -28,13 +28,9 @@ function getRegion(countryCode: string): Region {
 function getPricing(region: Region): { price: string; currency: string } {
   switch (region) {
     case "middle-east":
-      return { price: "9,500", currency: "LE" };
-    case "gulf":
-      return { price: "400", currency: "USD" };
-    case "north-america-europe":
-      return { price: "750", currency: "USD" };
+      return { price: "10,900", currency: "LE" };
     default:
-      return { price: "750", currency: "USD" };
+      return { price: "400", currency: "USD" };
   }
 }
 
