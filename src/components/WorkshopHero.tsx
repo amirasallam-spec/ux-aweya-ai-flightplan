@@ -56,7 +56,7 @@ const WorkshopHero = () => {
           </p>
           
           <p className="text-lg mb-8 text-muted-foreground max-w-xl">
-            A 7-module, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
+            A 7-module + 6 meetups, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
           </p>
           
           {/* Info cards */}
