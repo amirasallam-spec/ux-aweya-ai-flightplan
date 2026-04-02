@@ -111,7 +111,7 @@ const WorkshopSections = () => {
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
               <CardContent className="p-8">
                 <p className="text-lg text-muted-foreground mb-6">
-                  A 7-module, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
+                  A 7-module + 6 meetups, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
                 </p>
                 <div className="text-left">
                   <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
@@ -147,7 +147,7 @@ const WorkshopSections = () => {
                     <BookOpen className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-                      <p className="text-lg font-bold text-foreground">7 Modules</p>
+                      <p className="text-lg font-bold text-foreground">7 Modules + 6 Meetups</p>
                       <p className="text-muted-foreground">Online - Microsoft Teams</p>
                     </div>
                   </div>
