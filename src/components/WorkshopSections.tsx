@@ -33,7 +33,7 @@ const WorkshopSections = () => {
     description: "Presentations and reviews"
   }];
   const deliverables = ["Redesign application using AI-Prototyping", "Clickable AI-augmented prototype", "Portfolio-ready project to present"];
-  const whyJoin = ["Learn something new every session and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
+  const whyJoin = ["Learn something new every module and become part of an AI-powered design community", "Produce portfolio-ready artifacts and differentiate yourself among the crowd", "Practical, team-ready workflow you can apply immediately"];
   const testimonials = [{
     name: "Sarah Ayman",
     role: "UI/UX Designer @ Dahab Masr",
@@ -107,7 +107,7 @@ const WorkshopSections = () => {
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
               <CardContent className="p-8">
                 <p className="text-lg text-muted-foreground mb-6">
-                  A 6-session, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
+                  A 6-module, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
                 </p>
                 <div className="text-left">
                   <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
@@ -136,14 +136,14 @@ const WorkshopSections = () => {
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
                       
-                      <p className="text-lg font-bold text-foreground">Next Cohort begins 8 April, 2026</p>
+                      <p className="text-lg font-bold text-foreground">Next Cohort begins mid-April, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
                     <BookOpen className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-                      <p className="text-lg font-bold text-foreground">6 + 1 Bonus</p>
+                      <p className="text-lg font-bold text-foreground">6 Modules</p>
                       <p className="text-muted-foreground">Online - Microsoft Teams</p>
                     </div>
                   </div>
@@ -220,7 +220,7 @@ const WorkshopSections = () => {
                 Curriculum
               </span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Session outline</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-foreground">Module outline</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
               {sessions.map((session, index) => <ScrollReveal key={index} delay={index * 0.1}>
                   <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border hover:shadow-lg transition-all duration-300 h-full">
