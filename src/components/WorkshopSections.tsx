@@ -107,7 +107,7 @@ const WorkshopSections = () => {
             <Card className="bg-card/80 backdrop-blur-sm rounded-2xl shadow-sm border border-border w-full">
               <CardContent className="p-8">
                 <p className="text-lg text-muted-foreground mb-6">
-                  A 6-session, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
+                  A 6-module, hands-on workshop to sharpen analysis, reporting, AI prototyping, and presentation skills.
                 </p>
                 <div className="text-left">
                   <h4 className="font-semibold mb-2 text-primary">Designed for:</h4>
