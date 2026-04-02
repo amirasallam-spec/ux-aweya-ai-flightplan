@@ -73,7 +73,7 @@ const WorkshopHero = () => {
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-              <p className="text-lg font-bold text-foreground">7 Modules + 6 Meetups</p>
+              <p className="text-lg font-bold text-foreground">7 Recorded + 6 Online</p>
             </div>
           </div>
           
