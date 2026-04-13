@@ -4,6 +4,7 @@ type Region = "middle-east" | "gulf" | "north-america-europe" | "other";
 
 interface GeoPricing {
   price: string;
+  earlyBirdPrice: string;
   currency: string;
   region: Region;
   loading: boolean;
@@ -25,18 +26,19 @@ function getRegion(countryCode: string): Region {
   return "other";
 }
 
-function getPricing(region: Region): { price: string; currency: string } {
+function getPricing(region: Region): { price: string; earlyBirdPrice: string; currency: string } {
   switch (region) {
     case "middle-east":
-      return { price: "10,900", currency: "LE" };
+      return { price: "15,900", earlyBirdPrice: "12,400", currency: "LE" };
     default:
-      return { price: "400", currency: "USD" };
+      return { price: "320", earlyBirdPrice: "250", currency: "USD" };
   }
 }
 
 export function useGeoPricing(): GeoPricing {
   const [data, setData] = useState<GeoPricing>({
-    price: "750",
+    price: "320",
+    earlyBirdPrice: "250",
     currency: "USD",
     region: "other",
     loading: true,
