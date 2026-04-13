@@ -183,7 +183,6 @@ const WorkshopSections = () => {
                 {/* Countdown in schedule section */}
                 <div className="mt-8">
                   <EarlyBirdCountdown />
-                  </div>
                 </div>
               </CardContent>
             </Card>
