@@ -5,8 +5,10 @@ import { CheckCircle, Calendar, BookOpen, Presentation, ArrowRight, Quote } from
 import ScrollReveal from "./ScrollReveal";
 import DecorativeElements from "./DecorativeElements";
 import { useGeoPricing } from "@/hooks/use-geo-pricing";
+import EarlyBirdCountdown, { useIsEarlyBird } from "./EarlyBirdCountdown";
 const WorkshopSections = () => {
-  const { price, currency, loading } = useGeoPricing();
+  const { price, earlyBirdPrice, currency, loading } = useGeoPricing();
+  const isEarlyBird = useIsEarlyBird();
   const sessions = [{
     number: "01",
     title: "Vibe coding introduction",
@@ -140,7 +142,7 @@ const WorkshopSections = () => {
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Dates</p>
                       
-                      <p className="text-lg font-bold text-foreground">Next Cohort begins mid-April, 2026</p>
+                      <p className="text-lg font-bold text-foreground">Starting April 26, 2026</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-4">
@@ -155,13 +157,32 @@ const WorkshopSections = () => {
                     <div className="w-6 h-6 text-primary font-bold text-lg flex-shrink-0 mt-1">{currency === "USD" ? "$" : "LE"}</div>
                     <div>
                       <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-                      <p className="text-lg font-bold text-foreground">
-                        {loading ? "..." : `${currency === "USD" ? "$" : ""}${price}${currency !== "USD" ? ` ${currency}` : ""}`}
-                      </p>
+                      {loading ? (
+                        <p className="text-lg font-bold text-foreground">...</p>
+                      ) : isEarlyBird ? (
+                        <div>
+                          <p className="text-lg font-bold text-accent">
+                            {currency === "USD" ? "$" : ""}{earlyBirdPrice}{currency !== "USD" ? ` ${currency}` : ""}
+                            <span className="text-xs font-normal text-muted-foreground ml-2">Early Bird</span>
+                          </p>
+                          <p className="text-sm text-muted-foreground line-through">
+                            {currency === "USD" ? "$" : ""}{price}{currency !== "USD" ? ` ${currency}` : ""}
+                          </p>
+                        </div>
+                      ) : (
+                        <p className="text-lg font-bold text-foreground">
+                          {currency === "USD" ? "$" : ""}{price}{currency !== "USD" ? ` ${currency}` : ""}
+                        </p>
+                      )}
                       <Badge variant="outline" className="mt-2 border-primary/20 text-primary text-xs">
                         Limited seats
                       </Badge>
                     </div>
+                  </div>
+                </div>
+                {/* Countdown in schedule section */}
+                <div className="mt-8">
+                  <EarlyBirdCountdown />
                   </div>
                 </div>
               </CardContent>
