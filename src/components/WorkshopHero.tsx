@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useGeoPricing } from "@/hooks/use-geo-pricing";
+import EarlyBirdCountdown, { useIsEarlyBird } from "./EarlyBirdCountdown";
 
 // Instructor image
 const instructorImage = "/lovable-uploads/amira-instructor.png";
 const WorkshopHero = () => {
-  const { price, currency, loading } = useGeoPricing();
+  const { price, earlyBirdPrice, currency, loading } = useGeoPricing();
+  const isEarlyBird = useIsEarlyBird();
   return <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/20">
       {/* Decorative elements */}
       <div className="absolute top-16 left-8 w-16 h-16 opacity-60">
@@ -60,21 +62,39 @@ const WorkshopHero = () => {
           </p>
           
           {/* Info cards */}
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-wrap gap-4 mb-6">
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Starting</p>
-              <p className="text-lg font-bold text-foreground">Mid-April</p>
+              <p className="text-lg font-bold text-foreground">April 26</p>
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Price</p>
-              <p className="text-lg font-bold text-foreground">
-                {loading ? "..." : `${currency === "USD" ? "$" : ""}${price}${currency !== "USD" ? ` ${currency}` : ""}`}
-              </p>
+              {loading ? (
+                <p className="text-lg font-bold text-foreground">...</p>
+              ) : isEarlyBird ? (
+                <div>
+                  <p className="text-lg font-bold text-accent">
+                    {currency === "USD" ? "$" : ""}{earlyBirdPrice}{currency !== "USD" ? ` ${currency}` : ""}
+                  </p>
+                  <p className="text-xs text-muted-foreground line-through">
+                    {currency === "USD" ? "$" : ""}{price}{currency !== "USD" ? ` ${currency}` : ""}
+                  </p>
+                </div>
+              ) : (
+                <p className="text-lg font-bold text-foreground">
+                  {currency === "USD" ? "$" : ""}{price}{currency !== "USD" ? ` ${currency}` : ""}
+                </p>
+              )}
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
               <p className="text-lg font-bold text-foreground">7 Recorded + 6 Online</p>
             </div>
+          </div>
+
+          {/* Early Bird Countdown */}
+          <div className="mb-10">
+            <EarlyBirdCountdown />
           </div>
           
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 group" onClick={() => window.open('https://forms.gle/ofu27YWkK4gJYi8D7', '_blank')}>
