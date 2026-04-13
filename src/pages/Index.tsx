@@ -12,8 +12,8 @@ const Index = () => {
         <div className="bg-primary text-primary-foreground px-4 py-3 relative">
           <div className="max-w-7xl mx-auto flex items-start gap-3 pr-8">
             <Info className="w-5 h-5 flex-shrink-0 mt-0.5" />
-            <p className="text-sm">
-              We are undergoing major changes in the Workshop content and delivery format to become a hybrid approach (Recorded + Meetings) and made it 10x better. Starting date mid-April. Add your name to the waiting list to get notified quickly when the workshop starts.
+             <p className="text-sm">
+              🔥 Early Bird Pricing: $250 (save $70!) — offer expires April 16. Workshop starts April 26. Join the waitlist now!
             </p>
             <button
               onClick={() => setShowBanner(false)}
