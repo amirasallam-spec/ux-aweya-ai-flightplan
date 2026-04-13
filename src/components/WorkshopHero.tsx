@@ -58,7 +58,7 @@ const WorkshopHero = () => {
           </p>
           
           <p className="text-lg mb-8 text-muted-foreground max-w-xl">
-            A 7 recorded modules + 6 online meetups, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
+            A 7 recorded modules, 50+ lessons and 6 online meetups, hands-on workshop to sharpen AI knowledge, tools, AI prototyping, and automation.
           </p>
           
           {/* Info cards */}
@@ -88,7 +88,7 @@ const WorkshopHero = () => {
             </div>
             <div className="bg-card/80 backdrop-blur-sm rounded-2xl px-6 py-4 shadow-sm border border-border">
               <p className="text-xs text-muted-foreground uppercase tracking-wide mb-1">Format</p>
-              <p className="text-lg font-bold text-foreground">7 Recorded + 6 Online</p>
+              <p className="text-lg font-bold text-foreground">7 Recorded, 50+ Lessons, 6 Online</p>
             </div>
           </div>
 
